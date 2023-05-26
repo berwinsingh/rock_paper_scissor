@@ -54,8 +54,9 @@ const playRound = (playerSelection, computerSelection) => {
 
     else {
 
-        if (playerSelection === "rock" && computerSelection === "scissors" || playerSelection === "scissors" 
-            && computerSelection === "paper" || playerSelection === "paper" && computerSelection==="rock") {
+        if ((playerSelection === "rock" && computerSelection === "scissors") || 
+            (playerSelection === "scissors" && computerSelection === "paper") || 
+            (playerSelection === "paper" && computerSelection==="rock")) {
                 
                 playerCalc++;
                 playerScore.textContent = playerCalc;
