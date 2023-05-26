@@ -4,10 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
     <title>Rock, Paper and Scissors</title>
 </head>
 <body>
-    
+    <div class="main flex">
+        <h1>Choose your Weapon!</h1>
+        <p class="sub-heading">Let's see if you have what it takes to stop the rise of the <span><strong>Machines</strong></span>!🤖</p>
+        <div class="score flex">
+            <div class="scores flex">
+                <h2>Player Score</h2>
+                <p class="player-score">0</p>
+            </div>
+            <div class="scores flex">
+                <h2>Computer Score</h2>
+                <p class="computer-score">0</p>
+            </div>
+        </div>
+        <div class="flex options-container">
+            <div id="rock" class="option flex">
+                <img src="./Images/rock.png" alt="rock image" class="image">
+                <h3>Rock</h3>
+            </div>
+            <div id="paper" class="option flex">
+                <img src="./Images/hello.png" alt="paper image" class="image">
+                <h3>Paper</h3>
+            </div>
+            <div id="scissor" class="option flex">
+                <img src="./Images/scissors.png" alt="scissor image" class="image">
+                <h3>Scissor</h3>
+            </div>
+        </div>
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>
