@@ -54,8 +54,15 @@ const playRound = (playerSelection, computerSelection) => {
 
     else {
 
-        if (playerSelection === "rock" && computerSelection === "scissor" || playerSelection === "scissors" 
-            && computerSelection === "paper" || playerSelection === "paper" && computerSelection==="rock") {
+        if (playerSelection === "rock" && computerSelection === "scissor"){
+                playerCalc++;
+                playerScore.textContent = playerCalc;
+                p.textContent = `Your Choice: ${playerSelection}, Computer's Choice: ${computerSelection}`;
+                p.style.cssText ="margin-top: 40px";
+                optionsContainer.insertAdjacentElement("afterend",p);
+        }
+        
+        else if (playerSelection === "scissors" && computerSelection === "paper" || playerSelection === "paper" && computerSelection==="rock") {
                 
                 playerCalc++;
                 playerScore.textContent = playerCalc;
