@@ -66,11 +66,13 @@ const playRound = (playerSelection, computerSelection) => {
     
         else if (playerSelection === computerSelection) {
             p.textContent = `Your Choice: ${playerSelection}, Computer's Choice: ${computerSelection}`;
+            p.style.cssText ="margin-top: 40px";
             optionsContainer.insertAdjacentElement("afterend", p);
         }
 
         else {
             p.textContent = `Your Choice: ${playerSelection}, Computer's Choice: ${computerSelection}`;
+            p.style.cssText ="margin-top: 40px";
             optionsContainer.insertAdjacentElement("afterend", p);
             compCalc++;
             computerScore.textContent = compCalc;
